@@ -1,0 +1,35 @@
+{
+  "name": "homeautomation-logger-hue",
+  "version": "0.0.1",
+  "description": "Keep a log of every Philips Hue / deCONZ adjustment",
+  "license": "ISC",
+  "author": {
+    "name": "Paolo Tremadio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolotremadio/homeautomation-logger-hue.git"
+  },
+  "bugs": {
+    "url": "http://github.com/paolotremadio/homeautomation-logger-hue/issues"
+  },
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "forever": "^0.15.3",
+    "homeautomation-winston-logger": "^0.0.1",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .js",
+    "start": "./node_modules/forever/bin/forever -m 99999999999999999999999999999 --fifo src/index.js"
+  }
+}

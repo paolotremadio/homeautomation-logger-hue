@@ -1,0 +1,14 @@
+{
+  "hubs": [
+    {
+      "name": "Home",
+      "ip": "IP",
+      "port": 80,
+      "username": "YOUR HUE / DECONZ KEY",
+      "protocol": "http"
+    }
+  ],
+  "updateFrequency": 60,
+  "logFile": "data.log",
+  "debug": false
+}
